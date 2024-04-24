@@ -1,5 +1,13 @@
 body {
+  background-color: blueviolet;
   font-family: "Sedan", serif;
   font-weight: 400;
   font-style: normal;
+}
+.main-card {
+  background-color: gray;
+  width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 20px;
 }
