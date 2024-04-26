@@ -1,13 +1,39 @@
 body {
-  background-color: blueviolet;
+  background-color: aliceblue;
   font-family: "Sedan", serif;
-  font-weight: 400;
-  font-style: normal;
 }
+
 .main-card {
-  background-color: gray;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(137, 210, 253) 0%,
+    rgb(255, 241, 188) 90%
+  );
   width: 600px;
   margin: 50px auto;
   padding: 30px;
   border-radius: 20px;
+  box-shadow: 0 30px 50px rgba(65, 50, 100, 0.08);
+}
+#enter-city {
+  font-size: 18px;
+  background-color: rgb(187, 187, 187);
+  padding: 15px 20px;
+  width: 75%;
+  margin-right: 5px;
+  border: none;
+  border-radius: 5px;
+}
+#search-city {
+  font-size: 18px;
+  background-color: rgb(88, 86, 86);
+  color: white;
+  padding: 15px 30px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+}
+header {
+  border-bottom: 1px solid grey;
+  padding: 0 0 30px 0;
 }
