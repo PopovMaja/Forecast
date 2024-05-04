@@ -1,7 +1,10 @@
 function updateTemperature(response) {
   let newTemperature = document.querySelector("#temperature");
   let searchedCity = document.querySelector("#city-name");
+  let weatherDescription = document.querySelector("#weather-description");
   let temperature = response.data.temperature.current;
+  console.log(response.data);
+  weatherDescription.innerHTML = response.data.condition.description;
   searchedCity.innerHTML = response.data.city;
   newTemperature.innerHTML = Math.round(temperature);
 }
