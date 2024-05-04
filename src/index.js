@@ -1,12 +1,15 @@
 function updateTemperature(response) {
   let newTemperature = document.querySelector("#temperature");
+  let temperature = response.data.temperature.current;
   let searchedCity = document.querySelector("#city-name");
   let weatherDescription = document.querySelector("#weather-description");
   let humidityElement = document.querySelector("#humidity");
   let windSpeed = document.querySelector("#wind-speed");
-  let temperature = response.data.temperature.current;
   let mph = response.data.wind.speed;
+  let realFeel = document.querySelector("#real-feel");
+  let feelsLike = response.data.temperature.feels_like;
 
+  realFeel.innerHTML = Math.round(feelsLike);
   windSpeed.innerHTML = Math.round(mph);
   humidityElement.innerHTML = response.data.temperature.humidity;
   weatherDescription.innerHTML = response.data.condition.description;
