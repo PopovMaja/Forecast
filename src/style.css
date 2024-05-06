@@ -60,13 +60,17 @@ h2 {
   justify-content: space-between;
   max-height: 75px;
 }
+#time {
+  font-size: 18px;
+}
 #weather-info {
   display: flex;
   margin-right: 60px;
 }
 .icon {
-  font-size: 35px;
-  margin-right: 10px;
+  width: 75px;
+  height: 75px;
+  margin-top: -10px;
 }
 .temperature {
   font-size: 80px;
@@ -76,6 +80,7 @@ h2 {
   font-size: 20px;
 }
 #extra-info {
+  font-size: 18px;
   font-style: italic;
   display: flex;
   justify-content: space-evenly;
