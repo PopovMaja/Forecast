@@ -87,6 +87,25 @@ h2 {
   padding-left: 0px;
   margin: 20px 0;
 }
+
+.weather-forecast {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0px;
+}
+.five-day-forecast {
+  color: black;
+}
+.forecast-per-day {
+  font-size: 18px;
+  opacity: 0.9;
+}
+.min-temperature {
+  opacity: 0.9;
+}
+.forecast-temperature {
+  font-size: 15px;
+}
 footer {
   text-align: center;
   border-top: 1px solid grey;

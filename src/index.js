@@ -77,7 +77,32 @@ function searchResault(event) {
   searchCity(cityInput.value);
 }
 
+function displayForecast() {
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (days) {
+    forecastHtml =
+      forecastHtml +
+      `
+        <div class="five-day-forecast">
+          <div class="forecast-per-day">${days}</div>
+          <img
+            src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+            width="35px"
+          />
+          <div class="forecast-temperature">
+            <span class="max-temperature">27°</span>
+            <span class="min-temperature">13°</span>
+          </div>
+        </div>`;
+  });
+  let forecastElement = document.querySelector("#forecast");
+  forecastElement.innerHTML = forecastHtml;
+}
+
 let searchBar = document.querySelector("#enter-search-bar");
 searchBar.addEventListener("submit", searchResault);
 
 searchCity("New York City");
+displayForecast();
