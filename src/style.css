@@ -86,25 +86,33 @@ h2 {
   justify-content: space-evenly;
   padding-left: 0px;
   margin: 20px 0;
+  border-bottom: 1px solid grey;
 }
 
 .weather-forecast {
   display: flex;
   justify-content: space-around;
-  margin: 30px 0px;
+  margin: 20px 0px;
 }
 .five-day-forecast {
   color: black;
 }
 .forecast-per-day {
+  text-align: center;
   font-size: 18px;
   opacity: 0.9;
 }
 .min-temperature {
-  opacity: 0.9;
+  opacity: 0.8;
+  color: red;
 }
 .forecast-temperature {
-  font-size: 15px;
+  text-align: center;
+  font-size: 16px;
+}
+.forecast-icon {
+  width: 75px;
+  height: 75px;
 }
 footer {
   text-align: center;
